@@ -1,0 +1,781 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  /* padding: 15px 10% 15px 10%; */
+}
+
+/* style for the main container */
+.main-container {
+  margin: auto;
+  background-image: url(IMAGES/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 95%;
+  background-attachment: fixed;
+}
+
+/* styling for the second main container */
+.second-main {
+  margin: 10px 20px 30px 10px;
+  padding: 20px 10% 15px 10%;
+  border-radius: 20px;
+  background-color: rgba(156, 154, 154, 0.5);
+  height: 96%;
+  width: 95%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* styling for the profile section */
+.profile {
+  height: 95%;
+  width: 42%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  justify-content: center;
+  margin: 20px 40px;
+  padding: 0 35px 5px 35px;
+}
+
+/* style for the profile image */
+.profile img {
+  position: relative;
+  left: 25%;
+  height: 250px;
+  width: 200px;
+  padding-top: 0;
+  margin: 0;
+}
+
+/* style for the details in the profile section */
+.profile .detail {
+  display: flex;
+  padding-top: 20px;
+}
+
+.profile .detail .detail1 {
+  width: 40%;
+}
+
+.detail1 h6 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile .detail .detail2 {
+  width: 60%;
+}
+
+.detail2 p {
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: right;
+  padding-bottom: 20px;
+}
+
+/* style for the form inside the profile section */
+form {
+  font-size: 18px;
+}
+
+.input-data .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  margin-bottom: 3px;
+}
+
+#fname {
+  width: 40%;
+}
+
+#pnumber {
+  width: 40%;
+}
+
+#email {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: orangered;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px 30px 20px 0;
+}
+
+input[type="radio"] {
+  margin-top: 20px;
+  margin-bottom: 0;
+  appearance: none;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(5, 211, 5);
+  /* accent-color: red; */
+}
+
+input[type="submit"] {
+  height: 40px;
+  width: 150px;
+  position: relative;
+  left: 30%;
+  background-color: orangered;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/* end of style for the profile section */
+
+/* style for the payment section */
+.payment {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  width: 42%;
+  border-radius: 20px;
+  padding: 0;
+  justify-content: center;
+  margin: 20px 40px;
+}
+
+.account {
+  background-color: white;
+  border-radius: 20px;
+  height: 46%;
+  width: 100%;
+  margin: 0 0 25px 0;
+  padding: 25px 5% 15px 5%;
+}
+
+.account .account-detail {
+  display: flex;
+  font-size: 12px;
+  padding: 0 15px 20px 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.account .account-detail .xpay-acc {
+  padding-top: 5px;
+}
+
+/*styling for the search button in the account section */
+.account .account-detail i {
+  font-size: 14px;
+  position: relative;
+  left: 52%;
+  top: 5px;
+}
+
+/* styling for the edit button */
+.edit {
+  position: relative;
+  left: 55%;
+  background-color: rgb(224, 224, 224);
+  border-radius: 20px;
+  color: black;
+  width: 60px;
+  height: 25px;
+  padding: 4px;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+hr {
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+}
+
+.account-detail .active-acc {
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* styele for the block button */
+.account-detail .block {
+  position: relative;
+  left: 40%;
+  top: 18px;
+  background-color: orangered;
+  border-radius: 20px;
+  color: white;
+  width: 120px;
+  height: 25px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.account-detail .block-acc {
+  margin-top: 2px;
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* styele for the unblock button */
+.account-detail .Unblock {
+  position: relative;
+  left: 40%;
+  top: 10px;
+  background-color: rgb(142, 214, 60);
+  border-radius: 20px;
+  color: white;
+  width: 120px;
+  height: 25px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+/* style for the bills section */
+.bills {
+  background-color: white;
+  border-radius: 20px;
+  height: 55%;
+  width: 100%;
+  margin: 0;
+  padding: 30px 35px 0px 35px;
+}
+
+.bills .bill-1 {
+  display: flex;
+  font-size: 12px;
+  padding: 0 15px 20px 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.bills .bill-2 {
+  padding-top: 5px;
+}
+.bill-filter {
+  position: relative;
+  left: 70%;
+  background-color: rgb(224, 224, 224);
+  border-radius: 20px;
+  color: black;
+  width: 80px;
+  height: 25px;
+  padding: 4px;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+ul {
+  margin: 15px;
+  list-style-type: disc;
+  font-size: 25px;
+}
+
+ul li {
+  padding: 8px;
+  color: rgb(4, 211, 4);
+}
+
+li span {
+  color: black;
+  font-size: 14px;
+}
+
+.not-paid {
+  color: orangered;
+}
+
+/* styling for the button in the bill section */
+li button {
+  position: relative;
+  left: 65%;
+  background-color: rgb(142, 214, 60);
+  border-radius: 20px;
+  color: white;
+  width: 70px;
+  height: 25px;
+  padding: 5px;
+
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.btn-2 {
+  background-color: orangered;
+}
+
+@media (max-width: 1140px) {
+  .second-main {
+    margin: 10px 2% 30px 2%;
+    padding: 2%;
+  }
+
+  .payment {
+    margin-left: 15px;
+  }
+
+  .account {
+    margin: 0 0 25px 0;
+    padding: 25px 35px 15px 35px;
+  }
+
+  .account-detail .block-acc {
+    margin-top: 4px;
+    padding-top: 5px;
+    font-size: 11px;
+    line-height: 1.5;
+    width: 100px;
+  }
+
+  .account-detail .active-acc {
+    font-size: 11px;
+  }
+  .edit {
+    position: relative;
+    left: 50%;
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .account-detail .block {
+    position: relative;
+    left: 30%;
+    top: 14px;
+    font-size: 10px;
+  }
+
+  .account-detail .Unblock {
+    position: relative;
+    left: 30%;
+    top: 10px;
+    font-size: 10px;
+  }
+
+  .bill-filter {
+    position: relative;
+    left: 65%;
+  }
+
+  li button {
+    position: relative;
+    left: 52%;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1020) {
+  .edit {
+    position: relative;
+    left: 50%;
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .account-detail .block {
+    position: relative;
+    left: 10%;
+    top: 14px;
+    width: 80px;
+    margin-left: 0;
+  }
+
+  .account-detail .Unblock {
+    position: relative;
+    left: 40px;
+    top: 10px;
+    width: 80px;
+    margin-left: 0;
+  }
+
+  .active-acc {
+    margin-right: 0;
+  }
+
+  .block-acc {
+    margin-right: 0;
+  }
+
+  .bill-filter {
+    position: relative;
+    left: 55%;
+  }
+}
+
+@media (max-width: 995px) {
+  .edit {
+    position: relative;
+    left: 40%;
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .account-detail .block {
+    position: relative;
+    left: 35%;
+    top: 14px;
+    width: 80px;
+    margin-left: 0;
+  }
+
+  .account-detail .Unblock {
+    position: relative;
+    left: 85px;
+    top: 10px;
+    width: 90px;
+    margin-left: 0;
+  }
+
+  .active-acc {
+    margin-right: 0;
+  }
+
+  .block-acc {
+    margin-right: 0;
+  }
+
+  .bill-filter {
+    position: relative;
+    left: 55%;
+  }
+}
+
+@media (max-width: 968px) {
+  body {
+    min-height: 200vh;
+    width: 100%;
+    /* padding: 15px 10% 15px 10%; */
+  }
+
+  /* style for the main container */
+  .main-container {
+    margin: auto;
+    height: 180vh;
+    width: 95%;
+    background-attachment: fixed;
+  }
+
+  /* styling for the second main container */
+
+  /* styling for the second main container */
+  .second-main {
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 20px 10% 15px 10%;
+    border-radius: 20px;
+    background-color: rgba(156, 154, 154, 0.5);
+    height: 180vh;
+    width: 95%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .payment {
+    width: 85%;
+    margin: auto;
+  }
+
+  .account {
+    margin-bottom: 20px;
+  }
+
+  /* style for the bills section */
+  .bills {
+    background-color: white;
+    border-radius: 20px;
+
+    width: 100%;
+    margin: 0;
+    padding: 30px 6% 0px 8%;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile img {
+    position: relative;
+    left: 18%;
+    height: 250px;
+  }
+
+  .edit {
+    position: relative;
+    left: 40%;
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .account-detail .block {
+    position: relative;
+    left: 27%;
+    top: 14px;
+    width: 80px;
+    margin-left: 0;
+  }
+
+  .account-detail .Unblock {
+    position: relative;
+    left: 27%;
+    top: 12px;
+    width: 80px;
+    margin-left: 0;
+  }
+
+  /* .active-acc{
+      margin-right: 0;
+    }
+
+    .block-acc{
+      margin-right: 0;
+    } */
+
+  .bill-filter {
+    position: relative;
+    left: 54%;
+  }
+}
+
+@media (max-width: 450px) {
+  .profile img {
+    position: relative;
+    left: 14%;
+  }
+
+  input {
+    font-size: 12px;
+  }
+  input[type="submit"] {
+    position: relative;
+    left: 25%;
+    top: 15%;
+    margin-top: 15px;
+  }
+
+  /* styling for the button in the bill section */
+  li button {
+    position: relative;
+    left: 40%;
+  }
+}
+
+@media (max-width: 415px) {
+  /* style for the profile image */
+  .profile img {
+    position: relative;
+    left: 8%;
+  }
+
+  /* style for the details in the profile section */
+  .detail1 h6 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .detail2 p {
+    font-size: 11px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: right;
+    padding-bottom: 20px;
+  }
+
+  /* style for the form inside the profile section */
+  input {
+    font-size: 11px;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    height: 40px;
+    width: 150px;
+    position: relative;
+    left: 20%;
+    top: 10px;
+    font-size: 15px;
+  }
+  /* end of style for the profile section */
+  .edit {
+    position: relative;
+    left: 30%;
+  }
+
+  .account-detail .block {
+    position: relative;
+    left: 22%;
+    font-size: 10px;
+  }
+
+  .account-detail .Unblock {
+    position: relative;
+    left: 22%;
+    font-size: 10px;
+  }
+
+  /* .bill-filter{
+    position: relative;
+    left: 46%;
+  }  */
+}
+
+@media (max-width: 390px) {
+  /* style for the profile image */
+  .profile img {
+    position: relative;
+    left: 8%;
+    height: 220px;
+    width: 180px;
+  }
+
+  /* style for the details in the profile section */
+  .detail1 h6 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .detail2 p {
+    font-size: 11px;
+  }
+
+  /* style for the form inside the profile section */
+  input {
+    font-size: 11px;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    width: 150px;
+    position: relative;
+    left: 18%;
+    top: 10px;
+  }
+
+  /* end of style for the profile section */
+  .xpay-acc {
+    font-size: 11px;
+    padding-top: 5px;
+  }
+
+  .edit {
+    position: relative;
+    left: 27%;
+  }
+
+  .account-detail .block {
+    position: relative;
+    left: 20%;
+    font-size: 10px;
+  }
+
+  .account-detail .Unblock {
+    position: relative;
+    left: 20%;
+    width: 85px;
+  }
+
+  .bill-filter {
+    position: relative;
+    left: 41%;
+  }
+
+  li button {
+    position: relative;
+    left: 32%;
+  }
+}
+
+@media (max-width: 360px) {
+  /* style for the profile image */
+  .profile img {
+    position: relative;
+    left: 5%;
+  }
+
+  input[type="submit"] {
+    width: 150px;
+    position: relative;
+    left: 14%;
+  }
+
+  /* end of style for the profile section */
+  .xpay-acc {
+    font-size: 11px;
+    padding-top: 5px;
+  }
+
+  .edit {
+    position: relative;
+    left: 26%;
+  }
+
+  .account-detail .block {
+    position: relative;
+    left: 20%;
+    font-size: 10px;
+  }
+
+  .account-detail .Unblock {
+    position: relative;
+    left: 20%;
+    width: 86px;
+    font-size: 9.5px;
+    padding-top: 8px;
+  }
+
+  /* .bill-filter{
+    position: relative;
+    left: 41%;
+  }
+
+  li button{
+    position: relative;
+    left: 32%;
+  
+ } */
+}

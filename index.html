@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X-PAY ACCOUNT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b728671d5f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- this is the main container -->
+    <div class="main-container">
+      <!-- this is the second container that is gray in colour -->
+      <div class="second-main">
+        <!-- start of profile section -->
+        <div class="profile">
+          <img src="IMAGES/man.png" alt="" />
+          <div class="detail">
+            <div class="detail1"><h6>My profile</h6></div>
+            <div class="detail2">
+              <p>
+                Last login: 07 August 2015. <br />
+                Address: Winsor castle, New York City
+              </p>
+            </div>
+          </div>
+
+          <form class="input-data">
+            <div class="info">
+              <input
+                type="text"
+                id="fname"
+                name="fullname"
+                placeholder="Full name"
+              />
+              <input
+                type="tell"
+                id="pnumber"
+                name="pnumber"
+                placeholder="Phone number"
+              />
+            </div>
+            <input
+              type="email"
+              name=""
+              placeholder="Email address"
+              id="email"
+            /><br />
+            <label for="SMS alert">SMS alert activation</label
+            ><input type="radio" id="radio" /><br />
+            <input type="submit" value="Save" />
+          </form>
+        </div>
+        <!-- end of profile section -->
+
+        <!-- start of payment section -->
+        <div class="payment">
+          <!-- this is account section -->
+          <div class="account">
+            <div class="account-detail">
+              <div class="xpay-acc"><b>My xPay accounts</b></div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <div class="edit">Edit</div>
+            </div>
+            <hr />
+            <div class="account-detail">
+              <div class="active-acc">
+                <p>
+                  Active account. <br />
+                  8041 0909 2008 4525
+                </p>
+              </div>
+              <div class="block">Block account</div>
+            </div>
+            <div class="account-detail">
+              <div class="block-acc">
+                <p>Blocked account. <br />8041 0909 2008 4525</p>
+              </div>
+              <div class="Unblock">Unblock account</div>
+            </div>
+          </div>
+          <!-- end of account section -->
+
+          <!-- start of bills section -->
+          <div class="bills">
+            <div class="bill-1">
+              <div class="bill-2"><b>My bills</b></div>
+              <div class="bill-filter">Filter by</div>
+            </div>
+            <hr />
+            <ul>
+              <li>
+                <span>Phone bill</span> <button class="btn-1">Bill paid</button>
+              </li>
+              <li class="not-paid">
+                <span>Internet bill</span
+                ><button class="btn-2">Not paid</button>
+              </li>
+              <li>
+                <span>House rent </span><button class="btn-3">Bill paid</button>
+              </li>
+              <li>
+                <span>Income tax </span><button class="btn-4">Bill paid</button>
+              </li>
+            </ul>
+          </div>
+          <!-- end of bill section -->
+
+          <!-- end of payment section -->
+        </div>
+
+        <!-- end of the second main container -->
+      </div>
+
+      <!-- end of the main container -->
+    </div>
+  </body>
+</html>
