@@ -23,7 +23,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 95%;
+  width: 99%;
   background-attachment: fixed;
 }
 
@@ -283,6 +283,7 @@ hr {
 .bills .bill-2 {
   padding-top: 5px;
 }
+
 .bill-filter {
   position: relative;
   left: 70%;
@@ -327,8 +328,7 @@ li button {
   width: 70px;
   height: 25px;
   padding: 5px;
-
-  font-size: 12px;
+ font-size: 12px;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
@@ -476,7 +476,6 @@ li button {
   body {
     min-height: 200vh;
     width: 100%;
-    /* padding: 15px 10% 15px 10%; */
   }
 
   /* style for the main container */
@@ -486,8 +485,6 @@ li button {
     width: 95%;
     background-attachment: fixed;
   }
-
-  /* styling for the second main container */
 
   /* styling for the second main container */
   .second-main {
@@ -559,14 +556,6 @@ li button {
     margin-left: 0;
   }
 
-  /* .active-acc{
-      margin-right: 0;
-    }
-
-    .block-acc{
-      margin-right: 0;
-    } */
-
   .bill-filter {
     position: relative;
     left: 54%;
@@ -636,6 +625,7 @@ li button {
     font-size: 15px;
   }
   /* end of style for the profile section */
+
   .edit {
     position: relative;
     left: 30%;
